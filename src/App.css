@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#darkmode{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+#navbar {
+  max-width: 100%;
+  background-color:rgb(121, 226, 250);
+  margin-bottom: 80px;
+  height: 70px
+}
+
+#darkmode .dark {
+  background-color: #292c35;
+}
+#darkmode .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+#darkmode .label {
+  width: 48px;
+  height: 24px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#darkmode .ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#darkmode .checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.navbar-brand {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  font-weight: 100;
+  color:#292c35;
+}
+
+.panel-default {
+  margin-left: 40px;
+}
+
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  #navbar {
+    height: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-brand {
+    font-size: large;
+  }
+
+  .panel-default {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Styles for screens up to 576px wide */
+  #navbar {
+    height: 40px;
+  }
+
+  .navbar-brand {
+    font-size: medium;
+  }
+
+  .panel-default {
+    margin-left: 10px;
   }
 }
