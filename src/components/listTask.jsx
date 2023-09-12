@@ -1,5 +1,5 @@
 import React from 'react';
-import TaskComponent from './listComponent';
+import ListComponent from './listComponent';
 
 const ListTask = ({ list, deleteTask, editTask }) => {
    return (
@@ -11,7 +11,7 @@ const ListTask = ({ list, deleteTask, editTask }) => {
                        list.map((task, index) => {
                            return (
                                <div key={index} className={'list-group-item col-sm-12'}>
-                                   <TaskComponent deleteTask={deleteTask} editTask={editTask} task={task} />
+                                   <ListComponent deleteTask={deleteTask} editTask={editTask} task={task} />
                                </div>
                            );
                        })

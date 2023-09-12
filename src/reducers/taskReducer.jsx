@@ -1,4 +1,4 @@
-import { CREATE_TASK, EDIT_TASK, SEARCH_TEXT_SET, STATUS_FILTER_SET, DELETE_TASK } from '../actions/index';
+import { CREATE_TASK, EDIT_TASK, SET_SEARCH_TEXT, SET_STATUS_FILTER, DELETE_TASK } from '../actions/index';
 import _ from 'lodash';
 
 const INITIAL_STATE = {
@@ -9,7 +9,7 @@ const INITIAL_STATE = {
     id: '3678'
   }],
   searchText:'',
-  StatusFilter:'All'
+  statusFilter:'All'
 }
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -42,15 +42,15 @@ const reducer = (state = INITIAL_STATE, action) => {
         task: state.task.filter(item => action.payload !== item.id)
       }
     }
-    case STATUS_FILTER_SET: {
+    case SET_STATUS_FILTER: {
       return {
         ...state,
         statusFilter: action.payload
       }
     }
-    case SEARCH_TEXT_SET : {
+    case SET_SEARCH_TEXT : {
       return {
-        ...state,
+         ...state,
         searchText: action.payload
       }
     }

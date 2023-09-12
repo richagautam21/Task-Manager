@@ -1,4 +1,4 @@
-import {CREATE_TASK, EDIT_TASK, DELETE_TASK, STATUS_FILTER_SET, SEARCH_TEXT_SET} from './index'
+import {CREATE_TASK, EDIT_TASK, DELETE_TASK, SET_STATUS_FILTER,SET_SEARCH_TEXT } from './index'
 
 export const createTask = (request) => {
   return {
@@ -16,14 +16,14 @@ export const deleteTask = (id) => {
 
 export const setStatusFilter = (str) => {
   return {
-    type: STATUS_FILTER_SET,
+    type: SET_STATUS_FILTER,
     payload: str
   }
 }
 
 export const setSearchText = (str) => {
   return {
-    type: SEARCH_TEXT_SET,
+    type: SET_SEARCH_TEXT,
     payload: str
   }
 }

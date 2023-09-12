@@ -21,7 +21,7 @@ const ModalComponent = (props) => {
 
   return (
     <Modal
-      showModal={props.show}
+      showModal={true}
       // onHide={props.handleHide}
       onHide={() => props.setShow(false)} // Close the modal
       container={this}
