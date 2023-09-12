@@ -1,7 +1,5 @@
 # Task Manager
-An effortless color searcher which pulls color data and sort by similarity according to the provided color.
-
-To calculate color similarity, it uses the pythagorean theorem in 3D to find the shortest distance from the RGB values of the color.
+A Dynamic Theme Switcher with User Preferences and a Task Manager that allows users to switch between different themes, save their preferences using Redux, and manage tasks with CRUD operations. The application demonstrates the use of hooks and have a polished UI.
 
 ## Table of Contents
 - Live Demo
@@ -40,7 +38,7 @@ It a single-page website in React that contains a following features:
 ## Run the App
 Clone this Repository
 
-git clone hhttps://github.com/richagautam21/Task-Manager
+git clone https://github.com/richagautam21/Task-Manager
 
 Initial Setup
 Run the following when setting up the project for the first time:
@@ -54,11 +52,11 @@ Run the following when setting up the project for the first time:
 
 ## Packages info
 
-redux: library for implementation of redux
-react-redux: combine redux with react
-redux-persist: It will make our store object persistent.
-redux-logger: it will create console log for every action user dispatch.
-react-router-dom: used for navigation in react application
-redux-thunk: redux directly do not support asynchronous coding, So we need to use this. We can also use redux-saga instead of it.
-React-bootstrap: using bootstrap classes in React application.
-lodash: javascript library for manipulating array.
+- redux: library for implementation of redux
+- react-redux: combine redux with react
+- redux-persist: It will make our store object persistent.
+- redux-logger: it will create console log for every action user dispatch.
+- react-router-dom: used for navigation in react application
+- redux-thunk: redux directly do not support asynchronous coding, So we need to use this. We can also use redux-saga instead of it.
+- React-bootstrap: using bootstrap classes in React application.
+- lodash: javascript library for manipulating array.
