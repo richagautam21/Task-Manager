@@ -10,7 +10,7 @@ A Dynamic Theme Switcher with User Preferences and a Task Manager that allows us
 
 
 ## Live Demo
-Take a look at the live version here: 
+Take a look at the live version here: https://task-manager-two-sigma.vercel.app/
 
 ## Features
 
